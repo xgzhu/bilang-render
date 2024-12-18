@@ -34,7 +34,7 @@ bilangrender
 ============
 
 
-    Add a short description here!
+    A Python library for beautifully rendering bilingual (original and translated) text in HTML. Designed to align, display, and organize multilingual content with ease.
 
 
 A longer description of your project goes here...
