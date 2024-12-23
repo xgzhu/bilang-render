@@ -7,7 +7,11 @@ __copyright__ = "Xiaoguang Zhu"
 __license__ = "MIT"
 
 
-def test_render():
-    """API Tests"""
-    assert render("<a>hello</a>") == "<a>Bonjour</a>"
+def test_translate_line_by_line():
+    """API Tests v1"""
+    assert render("<span>hello</span>", option="translate_line_by_line") == "<span>\n hello\n <br/>\n Bonjour\n</span>\n"
+
+def test_remove_and_reconstruct():
+    """API Tests v2"""
+    assert render("<span>hello</span>", option="remove_and_reconstruct") == "<span>\n hello\n |\n Bonjour\n</span>\n"
 
